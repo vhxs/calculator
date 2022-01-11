@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/display"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:background="#03A9F4"
+        android:outlineProvider="none"
+        android:textAlignment="textEnd"
+        android:textSize="48sp"
+        android:autoSizeTextType="uniform"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="12345" />
+
+    <GridLayout
+        android:id="@+id/button_grid"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:layout_marginTop="50dp"
+        android:alignmentMode="alignBounds"
+        android:background="#009688"
+        android:columnCount="4"
+        android:rowCount="5"
+        android:useDefaultMargins="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/display">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_columnWeight="0.25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/clear_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_columnWeight="0.25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/plus_minus_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_columnWeight="0.25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/percent_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_columnWeight="0.25"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/div_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/seven_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/eight_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/nine_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/mult_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/four_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/five_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/six_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/minus_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/one_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/two_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/three_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/plus_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_columnSpan="2"
+            android:layout_gravity="center"
+            android:text="@string/zero_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/decimal_name" />
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_gravity="center"
+            android:text="@string/equal_name" />
+
+
+    </GridLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
