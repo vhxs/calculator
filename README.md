@@ -6,11 +6,11 @@ Android development concepts learned so far: LiveData
 
 Todo:
 
-[ ] Make functional
-  [ ] Clear button
-  [ ] Arithmetic operations buttons
-  [ ] Equals button
-  [ ] Decimal button
-[ ] Improve UI
-  [ ] Fit better to screen
-  [ ] Material design principles
+- [ ] Make functional
+  - [ ] Clear button
+  - [ ] Arithmetic operations buttons
+  - [ ] Equals button
+  - [ ] Decimal button
+- [ ] Improve UI
+  - [ ] Fit better to screen
+  - [ ] Material design principles
