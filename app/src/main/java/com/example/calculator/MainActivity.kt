@@ -2,10 +2,14 @@ package com.example.calculator
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import androidx.activity.viewModels
 import androidx.core.view.children
 import com.example.calculator.databinding.ActivityMainBinding
+import com.example.calculator.ui.buttons.DecimalButton
+import com.example.calculator.ui.buttons.DigitButton
+import com.example.calculator.ui.buttons.OperationButton
 import com.example.calculator.ui.calculator.CalculatorViewModel
 
 class MainActivity : AppCompatActivity() {
@@ -19,9 +23,9 @@ class MainActivity : AppCompatActivity() {
 
         for (child in binding.buttonGrid.children) {
             if (child is Button) {
-                child.setOnClickListener {
-                    model.appendToString(child.text.toString())
-                }
+                val buttonLabel = child.text.toString()
+                val listener = model.buttonListener(buttonLabel)
+                child.setOnClickListener(listener)
             }
         }
 
